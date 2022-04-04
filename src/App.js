@@ -1,5 +1,4 @@
 import { Route, Routes } from "react-router-dom";
-import Card from "./Component/Card/Card";
 import HomePage from "./Component/HomePage/HomePage";
 import NavBar from "./Component/NavBar/NavBar";
 import NotFound from "./Component/NotFound/NotFound";
@@ -13,7 +12,7 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/home" element={<HomePage />} />
         <Route path="/reviews" element={<Reviews/>} />
-        {/* <Route path="/reviews" element={<NotFound />} /> */}
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </div>
   );
