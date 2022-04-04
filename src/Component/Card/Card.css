@@ -1,0 +1,48 @@
+.cardBoxWrap{
+    margin-left: 1.2rem;
+    margin-right: 1.2rem;
+    padding: 1rem;
+    min-width: 250px;
+    max-width: 550px;
+    background-color: rgb(245, 245, 245);
+    border-radius: .5rem;
+    box-shadow: 0 0 1.4rem .1rem rgba(0, 0, 0, 0.243);
+}
+.cardBoxWrap .info{
+    display: flex;
+    justify-content: space-between;
+}
+
+.cardBoxWrap .info .user{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.cardBoxWrap .info .user .userImg{
+    width: 2.8rem;
+    height: 2.8rem;
+    overflow: hidden;
+    border-radius: 50%;  
+    margin-right: .7rem;
+    border: 3px solid rgb(33, 96, 255);
+}
+.cardBoxWrap .info .user{
+    margin-bottom: .7rem;
+}
+.cardBoxWrap .info .user .userImg img{
+    object-fit: cover;
+    height: 100%;
+}
+.cardBoxWrap .info .useInfo .userName h4{
+    font-size: .9rem;
+    font-weight: 500;
+}
+.cardBoxWrap .info .useInfo .userName p{
+    font-size: .8rem;
+    color: gray;
+}
+.cardBoxWrap .info .rating{
+    flex-direction: column;
+    display: inline-block;
+}
+
