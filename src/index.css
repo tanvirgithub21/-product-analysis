@@ -1,13 +1,41 @@
-body {
+/* google font link Poppins___{font-family: 'Poppins', sans-serif;} */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap");
+/* google font link Roboto___{font-family: 'Roboto', sans-serif;} */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+
+* {
+  box-sizing: border-box;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: "Poppins", sans-serif;
+
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button {
+  font-family: "Roboto", sans-serif;
+}
+.sidePd {
+  max-width: 1280px;
+  padding: 0 1rem;
+  margin: auto;
+}
+button {
+  border: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding: 0.4rem 0.8rem;
+  background-color: rgb(75, 153, 255);
+  color: white;
+  border-radius: 1.3rem;
+  margin-top: 1rem;
+  margin-left: 1rem;
+
 }

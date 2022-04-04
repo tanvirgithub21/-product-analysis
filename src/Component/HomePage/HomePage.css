@@ -1,0 +1,29 @@
+.homePageWrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 2.8rem);
+    overflow: hidden;
+}
+.infoBox{
+    flex: 7.5;
+}
+.infoBox h1{
+    text-align: start;
+    font-size: 3rem;
+}
+.infoBox p{
+    max-width: 35rem;
+    font-size: 1.3rem;
+    margin-left: 1rem;
+    padding-top: 1rem;
+}
+.imageBox{
+    flex: 4.5;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.imageBox img{
+    width: 19rem;
+}
