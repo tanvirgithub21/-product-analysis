@@ -3,8 +3,6 @@ import "./Card.css";
 
 
 const Card = ({user}) => {
-
-    console.log(user);
     
     const {first_name,last_name, rating, text} = user;
     return (

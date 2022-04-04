@@ -1,22 +1,18 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import "./Reviews.css";
 import Card from "../Card/Card";
+import { usersContext } from "../../App";
 
-const userUrl =
-  "https://raw.githubusercontent.com/tanvirgithub21/ass-9-data/gh-pages/MOCK_DATA.json";
+
 
 const Reviews = () => {
-  const [users, setUsers] = useState([]);
 
-  useEffect(() => {
-    fetch(userUrl)
-      .then((res) => res.json())
-      .then((data) => setUsers(data));
-  }, []);
+  const {users} = useContext(usersContext)
+  
   return (
     <>
       <h3 className="text-center mt-7 font-semibold text-2xl">Total Reviews: {users.length}</h3>
-      <div className="ReviewsBox ">
+      <div className="ReviewsBox md:grid-cols-1">
         {users.map((user) => (
           <Card user={user} key={user.id} />
         ))}

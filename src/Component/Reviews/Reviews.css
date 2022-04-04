@@ -8,8 +8,8 @@
 /* responsive style  */
 @media only screen and (max-width: 801px) {
     .ReviewsBox{
-        display: grid;
-        grid-template-columns: 1fr;
-        justify-content: center;
+
+        /* grid-template-columns: 1fr; */
+
     }
   }
