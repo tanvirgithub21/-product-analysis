@@ -1,5 +1,5 @@
-import { createContext, useEffect, useState } from "react";
 import { Route, Routes } from "react-router-dom";
+import Blog from "./Component/Blog/Blog";
 import Dashboard from "./Component/Dashboard/Dashboard";
 import HomePage from "./Component/HomePage/HomePage";
 import NavBar from "./Component/NavBar/NavBar";
@@ -15,6 +15,7 @@ function App() {
         <Route path="/home" element={<HomePage />} />
         <Route path="/reviews" element={<Reviews />} />
         <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/blog" element={<Blog />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </div>

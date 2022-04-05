@@ -6,6 +6,10 @@
     background-color: rgb(245, 245, 245);
     border-radius: .5rem;
     box-shadow: 0 0 1.4rem .1rem rgba(0, 0, 0, 0.243);
+    transition: ease-in-out .3s;
+}
+.cardBoxWrap:hover{
+    transform: scale(1.02);
 }
 .cardBoxWrap .info{
     display: flex;

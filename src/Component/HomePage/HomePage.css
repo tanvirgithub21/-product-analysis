@@ -6,7 +6,7 @@
     overflow: hidden;
 }
 .infoBox{
-    flex: 7.5;
+    flex: 7;
 }
 .infoBox h1{
     text-align: start;
@@ -19,13 +19,13 @@
     padding-top: 1rem;
 }
 .imageBox{
-    flex: 4.5;
+    flex: 5;
     display: flex;
     justify-content: start;
     align-items: center;
 }
 .imageBox img{
-    width: 19rem;
+    width: 100%;
 }
 
 .homeReviewsBox{
@@ -73,4 +73,50 @@
     display: flex;
     justify-content: center;
     margin-top: 1rem;
+}
+
+
+@media only screen and (max-width: 985px) {
+    .infoBox h1{
+        font-size: 2rem;
+    }
+    .infoBox p{
+        max-width: 30rem;
+        font-size: 1.1rem;
+        margin-left: 1rem;
+        padding-top: 1rem;
+    }
+}
+@media only screen and (max-width: 680px) {
+    .homePageWrap{
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        height: auto;
+    }
+    .infoBox{
+        order: 2;
+        width: 100%;
+
+    }
+    .imageBox{
+        order: 1;
+    }
+    .infoBox h1{
+        font-size: 1.7rem;
+        text-align: center;
+    }
+    .infoBox p{
+        font-size: 1.1rem;
+        text-align: center;
+        margin: auto;
+    }
+    .imageBox img{
+        width: 70%;
+        margin: auto;
+    }
+    .someReviews{
+        min-width: 17rem;
+        grid-template-columns: 1fr;
+    }
 }

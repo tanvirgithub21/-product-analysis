@@ -12,7 +12,7 @@ const Dashboard = () => {
   },[])
 
     return (
-      <>
+      <div className='mainDashboard'>
         <div className="sectionHeader">
           <h1>Chart Analysis</h1>
         </div>
@@ -87,7 +87,7 @@ const Dashboard = () => {
 
 
       </div>
-      </>
+      </div>
     );
 };
 

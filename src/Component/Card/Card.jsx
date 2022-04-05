@@ -5,6 +5,7 @@ import "./Card.css";
 const Card = ({user}) => {
     
     const {first_name,last_name, rating, text} = user;
+
     return (
         <div className='cardBoxWrap '>
             
