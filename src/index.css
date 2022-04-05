@@ -30,7 +30,7 @@ button {
   padding: 0 1rem;
   margin: auto;
 }
-button {
+button, .btn {
   border: none;
   font-size: 1.1rem;
   font-weight: 500;
@@ -40,5 +40,12 @@ button {
   border-radius: 1.3rem;
   margin-top: 1rem;
   margin-left: 1rem;
+  transition: ease-in-out .3s;
+}
 
+.btn:hover{
+  background-color: rgb(27, 111, 220);
+}
+button:hover{
+  background-color: rgb(27, 111, 220);
 }

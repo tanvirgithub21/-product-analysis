@@ -1,3 +1,21 @@
+.sectionHeader h1{
+    text-align: center;
+    font-size: 2.1rem;
+    margin: 1rem 0  0 0;
+    font-weight: 500;
+    position: relative;
+}
+
+.sectionHeader h1::before{
+    content: "";
+    width: 250px;
+    height: .3rem;
+    border-bottom: 2px solid rgb(0, 1, 22);
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+}
 .AllChartBox{
     margin: 2.5rem 1rem;
     display: grid;
@@ -34,24 +52,6 @@
    align-items: center;
 }
 
-.sectionHeader h1{
-    text-align: center;
-    font-size: 2.1rem;
-    margin: 1rem 0  0 0;
-    font-weight: 500;
-    position: relative;
-}
-
-.sectionHeader h1::before{
-    content: "";
-    width: 250px;
-    height: .3rem;
-    border-bottom: 2px solid rgb(0, 1, 22);
-    position: absolute;
-    bottom: 0px;
-    left: 50%;
-    transform: translateX(-50%);
-}
 
 
 
@@ -63,6 +63,16 @@
     .responsiveContainer{
         width: 320px;
         margin: auto;
-
+    }
+    .responsiveContainer h2{
+       font-size: 1.2rem;
+    }
+    .sectionHeader h1{
+        font-size: 1.6rem;
+        margin-bottom: 0px;
+    }
+    .sectionHeader h1::before{
+        width: 175px;
+        transform: translateX(-50%);
     }
 }
