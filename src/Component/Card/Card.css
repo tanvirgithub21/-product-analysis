@@ -1,9 +1,8 @@
 .cardBoxWrap{
-    margin-left: 1.2rem;
-    margin-right: 1.2rem;
     padding: 1rem;
     min-width: 250px;
     max-width: 550px;
+    margin: 0rem auto;
     background-color: rgb(245, 245, 245);
     border-radius: .5rem;
     box-shadow: 0 0 1.4rem .1rem rgba(0, 0, 0, 0.243);
@@ -42,7 +41,15 @@
     color: gray;
 }
 .cardBoxWrap .info .rating{
-    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: inline-block;
+}
+.cardBoxWrap .info .rating h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     display: inline-block;
 }
 
